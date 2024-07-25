@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListarPensamentosComponent } from './listar-pensamentos.component';
+import { ListarPensamentosComponent } from './listar-pensamento.component';
 
 describe('ListarPensamentosComponent', () => {
   let component: ListarPensamentosComponent;
@@ -8,9 +8,8 @@ describe('ListarPensamentosComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ListarPensamentosComponent]
-    })
-    .compileComponents();
+      declarations: [ListarPensamentosComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(ListarPensamentosComponent);
     component = fixture.componentInstance;

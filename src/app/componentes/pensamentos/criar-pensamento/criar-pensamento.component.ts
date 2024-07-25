@@ -15,8 +15,17 @@ export class CriarPensamentoComponent implements OnInit {
 
   constructor() {}
 
-  escreva() {
-    console.log(this.pensamento);
-  }
   ngOnInit() {}
+  criarPensamento() {
+    console.table(this.pensamento);
+  }
+  cancelar() {
+    this.pensamento = {
+      id: 1,
+      conteudo: '',
+      autoria: '',
+      modelo: '',
+    };
+    console.table(this.pensamento);
+  }
 }

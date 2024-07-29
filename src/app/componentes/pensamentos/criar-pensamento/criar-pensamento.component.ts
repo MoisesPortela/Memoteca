@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Pensamento } from '../pensamento';
 
 @Component({
   selector: 'criar-pensamento',
@@ -7,10 +8,10 @@ import { Router } from '@angular/router';
   styleUrl: './criar-pensamento.component.css',
 })
 export class CriarPensamentoComponent implements OnInit {
-  pensamento = {
+  pensamento: Pensamento = {
     id: 1,
     conteudo: 'aprendendo angular',
-    autoria: 'Dev',
+    autor: 'Dev',
     modelo: '',
   };
 
@@ -24,7 +25,7 @@ export class CriarPensamentoComponent implements OnInit {
     this.pensamento = {
       id: 1,
       conteudo: '',
-      autoria: '',
+      autor: '',
       modelo: '',
     };
     this.router.navigate(['/listarPensamento']);

@@ -1,32 +1,26 @@
 .acoes {
   display: flex;
   justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .botao {
   margin: 5px;
+  margin-top: 70px;
+  width: 200px;
 }
 
 .editar-pensamentos {
   padding: 2rem 0;
 }
-.mensagem__erro {
-  font-size: 12px;
-  margin-left: 5px;
-  color: red;
-  margin-top: -25px;
-  margin-bottom: 20px;
-}
 
 .editar-pensamentos form {
   background: #c4edff;
-
   border: none;
   border-radius: 20px;
-
   display: flex;
   flex-direction: column;
-
   padding: 2rem;
 }
 
@@ -134,4 +128,18 @@ input[type="radio"]:checked + .custom-radio {
 
 input[type="radio"]:checked + .custom-radio span {
   background: #154580;
+}
+
+.mensagem__erro {
+  font-size: 12px;
+  margin-left: 5px;
+  color: red;
+  margin-top: -25px;
+  margin-bottom: 20px;
+}
+
+.botao__desabilitado {
+  margin: 5px;
+  margin-top: 70px;
+  width: 200px;
 }

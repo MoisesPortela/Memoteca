@@ -13,16 +13,19 @@ export class PensamentoService {
   listar(): Observable<Pensamento[]> {
     return this.httpClient.get<Pensamento[]>(this.API);
   }
+  listarId(id: number): Observable<Pensamento> {
+    const url = `${this.API}/${id}`;
+    return this.httpClient.get<Pensamento>(url);
+  }
   criar(pensamento: Pensamento): Observable<Pensamento> {
     return this.httpClient.post<Pensamento>(this.API, pensamento);
   }
-  deletar(id: number): Observable<void> {
-    return this.httpClient.delete<void>(`${this.API}/${id}`);
+  excluir(id: number): Observable<void> {
+    const url = `${this.API}/${id}`;
+    return this.httpClient.delete<void>(url);
   }
   atualizar(pensamento: Pensamento): Observable<Pensamento> {
-    return this.httpClient.put<Pensamento>(
-      `${this.API}/${pensamento.id}`,
-      pensamento
-    );
+    const url = `${this.API}/${pensamento.id}`;
+    return this.httpClient.put<Pensamento>(url, pensamento);
   }
 }

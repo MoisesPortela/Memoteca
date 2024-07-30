@@ -21,7 +21,4 @@ export class PensamentoComponent implements OnInit {
       return 'pensamento-p';
     }
   }
-  excluirPensamento(pensamento: Pensamento) {
-    this.pensamentoService.deletar(pensamento.id!).subscribe();
-  }
 }

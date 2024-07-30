@@ -10,6 +10,13 @@
 .editar-pensamentos {
   padding: 2rem 0;
 }
+.mensagem__erro {
+  font-size: 12px;
+  margin-left: 5px;
+  color: red;
+  margin-top: -25px;
+  margin-bottom: 20px;
+}
 
 .editar-pensamentos form {
   background: #c4edff;

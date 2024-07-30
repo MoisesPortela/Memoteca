@@ -19,7 +19,7 @@
             id="autoria"
             name="autoria"
             placeholder="Digite a autoria ou fonte"
-            [(ngModel)]="pensamento.autoria"
+            [(ngModel)]="pensamento.autor"
             >
         <label for="modelo">Seleciona o modelo do card:</label>
         <div class="container-radio">
@@ -41,7 +41,7 @@
                 <div class="modelo modelo1 ff-roboto-mono">
                     <img src="../../../../assets/imagens/modelo1.png" alt="Apas azuis">
                     <p class="conteudo">{{ pensamento.conteudo }}</p>
-                    <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
+                    <p class="autoria"><b>{{ pensamento.autor }}</b></p>
                 </div> 
             </div>
             <div class="radio-modelo">
@@ -62,7 +62,7 @@
                 <div class="modelo modelo2 ff-roboto-mono">
                     <img src="../../../../assets/imagens/modelo2.png" alt="Apas azuis claros">
                     <p class="conteudo">{{ pensamento.conteudo }}</p>
-                    <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
+                    <p class="autoria"><b>{{ pensamento.autor }}</b></p>
                 </div> 
             </div>
             <div class="radio-modelo">
@@ -83,7 +83,7 @@
                 <div class="modelo modelo3 ff-roboto-mono">
                     <img src="../../../../assets/imagens/modelo3.png" alt="Apas verdes">
                     <p class="conteudo">{{ pensamento.conteudo }}</p>
-                    <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
+                    <p class="autoria"><b>{{ pensamento.autor }}</b></p>
                 </div> 
             </div>
         </div>

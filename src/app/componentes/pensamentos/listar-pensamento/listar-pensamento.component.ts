@@ -15,6 +15,9 @@ export class ListarPensamentosComponent implements OnInit {
   constructor(private pensamentoService: PensamentoService) {}
 
   ngOnInit(): void {
+    this.apresentarMural();
+  }
+  apresentarMural() {
     this.pensamentoService
       .listar(this.paginaAtual, this.filtro)
       .subscribe((pensamentos) => {
@@ -38,6 +41,15 @@ export class ListarPensamentosComponent implements OnInit {
       .listar(this.paginaAtual, this.filtro)
       .subscribe((pensamentos) => {
         this.listaPensamentos = pensamentos;
+      });
+  }
+  listarFavoritos() {
+    this.haMaisPensamentos = true;
+    this.paginaAtual = 1;
+    this.pensamentoService
+      .listarFavoritos(this.paginaAtual, this.filtro)
+      .subscribe((pensamentosFavoritos) => {
+        this.listaPensamentos = pensamentosFavoritos;
       });
   }
 }

@@ -25,6 +25,18 @@ export class PensamentoService {
     const url = `${this.API}/${id}`;
     return this.httpClient.get<Pensamento>(url);
   }
+  listarFavoritos(pagina: number, filtro: string): Observable<Pensamento[]> {
+    const itensPorPagina = 5;
+    let params = new HttpParams()
+      .set('_page', pagina)
+      .set('_limit', itensPorPagina)
+      .set('favorito', true);
+    if (filtro.trim().length > 2) {
+      params = params.set('q', filtro);
+    }
+
+    return this.httpClient.get<Pensamento[]>(this.API, { params });
+  }
   criar(pensamento: Pensamento): Observable<Pensamento> {
     return this.httpClient.post<Pensamento>(this.API, pensamento);
   }

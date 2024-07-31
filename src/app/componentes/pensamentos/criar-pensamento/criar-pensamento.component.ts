@@ -32,10 +32,10 @@ export class CriarPensamentoComponent implements OnInit {
         Validators.compose([Validators.required, Validators.minLength(3)]),
       ],
       modelo: ['', [Validators.required]],
+      favorito: [false],
     });
   }
   criarPensamento() {
-    console.log(this.formulario.get('autor')?.errors);
     if (this.formulario.valid) {
       this.pensamentoService.criar(this.formulario.value).subscribe(() => {
         this.router.navigate(['/pensamentos']);

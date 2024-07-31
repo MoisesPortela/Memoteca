@@ -4,49 +4,64 @@
       "id": 1,
       "conteudo": "A vida é bela",
       "autor": "Desconhecido",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "favorito": true
     },
     {
       "id": 2,
       "conteudo": "O Dev ficará feliz com o código",
       "autor": "Chatgpt",
-      "modelo": "modelo2"
+      "modelo": "modelo2",
+      "favorito": false
     },
     {
       "id": 3,
       "conteudo": "Atchim",
       "autor": "8,2 bilhões de pessoas no mundo",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "favorito": false
     },
     {
       "id": 4,
       "conteudo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "autor": "githubcopilot",
-      "modelo": "modelo3"
+      "modelo": "modelo3",
+      "favorito": false
     },
     {
+      "id": 5,
       "conteudo": "De Jr até Sr em 6 meses",
       "autor": "coach que programou há mais de 10 anos",
       "modelo": "modelo3",
-      "id": 5
+      "favorito": false
     },
     {
+      "id": 6,
       "conteudo": "Java é ruim",
       "autor": "Dev traumatizado",
       "modelo": "modelo2",
-      "id": 6
+      "favorito": false
     },
     {
+      "id": 7,
       "conteudo": "Angular é vida",
       "autor": "Dev dedicado",
       "modelo": "modelo1",
-      "id": 7
+      "favorito": false
     },
     {
+      "id": 8,
       "conteudo": "Html + Css + Js fazem um bom site",
       "autor": "Professor de introdução à programação",
       "modelo": "modelo3",
-      "id": 8
+      "favorito": false
+    },
+    {
+      "id": 9,
+      "conteudo": "Roxo é minha cor favotira",
+      "autor": "Deikko",
+      "modelo": "modelo1",
+      "favorito": false
     }
   ]
 }

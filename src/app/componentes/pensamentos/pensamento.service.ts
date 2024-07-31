@@ -18,7 +18,6 @@ export class PensamentoService {
     if (filtro.trim().length > 2) {
       params = params.set('q', filtro);
     }
-    console.log('params', params);
 
     return this.httpClient.get<Pensamento[]>(this.API, { params });
   }
@@ -36,5 +35,10 @@ export class PensamentoService {
   atualizar(pensamento: Pensamento): Observable<Pensamento> {
     const url = `${this.API}/${pensamento.id}`;
     return this.httpClient.put<Pensamento>(url, pensamento);
+  }
+
+  mudarFavorito(pensamento: Pensamento): Observable<Pensamento> {
+    pensamento.favorito = !pensamento.favorito;
+    return this.atualizar(pensamento);
   }
 }
